@@ -1,46 +1,45 @@
 input {
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     border-bottom: 1px solid grey;
 }
-
+input:hover {
+    background-color: rgba(121,85,72,.3);
+    opacity: 0.6;
+}
 body {
     min-height: 100%;
 }
 html {
     height: 100%;
-  }
-
+}
 .normal {
     margin: 0%;
     padding: 0%;
 }
-
 .normal h1 {
-        position: absolute; 
-        top: 67px; 
-        left: 186px; 
-        width: 100%; 
-        color: white;
-        z-index: 2;
-        font-size: 25px;
+    position: absolute;
+    top: 112px;
+    left: 200px;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    font-size: 15px;
 }
-
 .normal h2 {
     color: white;
     z-index: 2;
     position: absolute;
-    top: 26rem;
+    top: 34rem;
     box-sizing: border-box;
-    padding: 3rem;
+    left: 58px;
     font-size: 1rem;
     overflow: hidden;
 }
-
 .normal h3 {
     z-index: 2;
     position: absolute;
@@ -50,8 +49,6 @@ html {
     font-weight: bold;
     font-size: 117%;
 }
-
-
 .normal p {
     z-index: 2;
     position: absolute;
@@ -59,15 +56,12 @@ html {
     left: 9%;
     color: white;
 }
-
 #image {
     position: relative;
     width: 100%;
     height: 100%;
     display: inherit;
-
 }
-
 #overlay{
     margin: 0%;
     padding: 0%;
@@ -77,9 +71,7 @@ html {
     width: 100%;
     height: 100%;
     display: inline-block;
-
 }
-
 #arrow {
     position: absolute;
     z-index: 2;
@@ -90,16 +82,16 @@ html {
     border-radius: 10%;
     padding: 2%;
 }
-
 .form {
-height: 100%;
-padding: 5%;
+    height: 100%;
+    padding: 5%;
 }
-
+.form p, h4, label {
+    color: gray;
+}
 .form input {
     margin-bottom: 5%;
 }
-
 .formulaire {
     display: block;
     width: 100%;
@@ -112,14 +104,29 @@ padding: 5%;
     border-radius: .25rem;
     border-bottom: 1px solid grey;
 }
-
 .contain {
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
-
+#line {
+    display: block;
+}
+#Mr {
+    margin: 0px 10px;
+}
+#Mme {
+    margin: 0px 10px;
+}
+#Autre{
+    margin: 0px 10px;
+}
+#inline {
+    display: inline-block;
+}
+#space {
+    margin-bottom: 5%;
+}
 @media (max-width: 768px) {
     .normal h1 {
         z-index: 2;
@@ -128,7 +135,7 @@ padding: 5%;
         left: 33%;
         font-size: 10px;
         color: white;
-    }
+   }
     .normal p {
         z-index: 2;
         position: absolute;
@@ -136,63 +143,60 @@ padding: 5%;
         left: 9%;
         color: white;
         font-size: 12px;
-    }
+   }
     .normal h2 {
         color: white;
         z-index: 2;
         position: absolute;
-        top: 18rem;
-        left: -29px;
+        top: 22rem;
+        left: 18px;
         box-sizing: border-box;
         font-size: 14px;
         overflow: hidden;
-    }
-        .normal h3 {
-            z-index: 2;
-            position: absolute;
-            top: 60%;
-            left: 9%;
-            color: white;
-            font-weight: bold;
-            font-size: 14px;
-        }
-    
+   }
+    .normal h3 {
+        z-index: 2;
+        position: absolute;
+        top: 60%;
+        left: 9%;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+   }
 }
-
 @media (min-width: 768px) and (max-width: 1500px) {
-        .normal h1 {
-            z-index: 2;
-            position: absolute;
-            top: 7%;
-            left: 34%;
-            font-size: 10px;
-            color: white;
-        }
-        .normal p{
-            z-index: 2;
-            position: absolute;
-            top: 38%;
-            left: 9%;
-            color: white;
-        }
-        .normal h2{
-            color: white;
-            z-index: 2;
-            position: absolute;
-            top: 22rem;
-            left: -10px;
-            box-sizing: border-box;
-            font-size: 1rem;
-            overflow: hidden;
-        }
-        .normal h3 {
-            z-index: 2;
-            position: absolute;
-            top: 54%;
-            left: 9%;
-            color: white;
-            font-weight: bold;
-            font-size: 117%;
-        }
-        
-    }
+    .normal h1 {
+        z-index: 2;
+        position: absolute;
+        top: 7%;
+        left: 34%;
+        font-size: 10px;
+        color: white;
+   }
+    .normal p{
+        z-index: 2;
+        position: absolute;
+        top: 38%;
+        left: 9%;
+        color: white;
+   }
+    .normal h2{
+        color: white;
+        z-index: 2;
+        position: absolute;
+        top: 28rem;
+        left: 37px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        overflow: hidden;
+   }
+    .normal h3 {
+        z-index: 2;
+        position: absolute;
+        top: 54%;
+        left: 9%;
+        color: white;
+        font-weight: bold;
+        font-size: 117%;
+   }
+}
